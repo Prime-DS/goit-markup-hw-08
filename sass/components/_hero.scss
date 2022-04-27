@@ -4,32 +4,71 @@
     text-align: center;
 
     max-width: 1600px;
-    /* height: 600px; */
     margin-left: auto;
     margin-right: auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     background-color: #c4c4c4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+        url(../images/hero_sm.jpg);
+        @include mq(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero_sm@2x.jpg);
+        }
+
+
+        @include mq(tablet) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero_ml.jpg);
+
+            @include mq(retina) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/hero_ml@2x.jpg);
+            }
+        }
+
+        @include mq(desktop) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero_lg.jpg);
+            
+            @include mq(retina) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/hero_lg@2x.jpg);
+            }
+
+        }
+   
 }
 
 .hero__title {
     margin: 0 auto;
-    width: 696px;
+    display: block;
+    max-width: 360px;
     margin-bottom: 30px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: var(--header-bg-color);
+
+    @include mq(desktop) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__btn {
