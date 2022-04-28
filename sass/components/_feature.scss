@@ -1,14 +1,16 @@
-// .feature {
-//      padding-bottom: 0;
-// }
+.feature {
+     padding-bottom: 0;
+}
 
 .feature__list {
 
     @include mq(tablet) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-
+        justify-content: space-between;
+    }
+    @include mq (desktop) {
+        flex-wrap: nowrap;
     }
     
 }
@@ -26,11 +28,16 @@
 
 .feature__item {
   width: auto;
+  margin-bottom: 30px;
   
   @include mq(tablet-only) {
-    width: 354px; 
+    width: 354px;   
   }
-    // width: 270px;
+  @include mq (desktop) {
+    max-width: 270px;
+
+  }
+
 }
 
 // .feature__item:not(:last-child) {

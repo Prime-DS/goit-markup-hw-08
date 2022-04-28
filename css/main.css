@@ -37,7 +37,7 @@ img {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -81,7 +81,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: solid 1px red;
+  border: 1px solid green;
 }
 
 @media screen and (min-width: 768px) {
@@ -316,6 +316,13 @@ img {
   .feature__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__list {
+    flex-wrap: nowrap;
   }
 }
 
@@ -330,11 +337,18 @@ img {
 
 .feature__item {
   width: auto;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .feature__item {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    max-width: 270px;
   }
 }
 
@@ -347,6 +361,12 @@ img {
 .feature__text {
   margin-top: 10px;
   text-align: left;
+}
+
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
 }
 
 .about__title {
@@ -391,8 +411,18 @@ img {
   margin-bottom: 50px;
 }
 
-.team__list {
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+  }
 }
 
 .team__item {
@@ -401,8 +431,25 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .team__item {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    max-width: 270px;
+  }
+  .team__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .team__item {
+    margin-bottom: 30px;
+  }
 }
 
 .team__wrapper {
@@ -449,25 +496,34 @@ img {
 }
 
 .client__list {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .client__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 
-.client__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 1199.98px) {
+  .client__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__item {
+    width: 170px;
+  }
 }
 
 .client__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 210px;
   height: 100%;
   border: 1px solid #afb1b8;
   fill: #afb1b8;

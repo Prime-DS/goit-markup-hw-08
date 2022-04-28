@@ -1,24 +1,38 @@
 .client__list {
-    margin-top: 50px;
+    margin-top: 30px;
+    
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // justify-content: center;
+
+    // margin-top: 50px;
 }
 
 .client__item {
-    width: 170px;
+    // display: flex;
+    // flex-wrap: wrap;
+    width: 210px;
     height: 92px;
 
-
-    &:not(:last-child) {
-    margin-right: 30px;
+    @include mq (notDesktop) {
+        margin-bottom: 30px;
     }
+
+    @include mq(desktop) {
+        width: 170px;
+        // &:not(:last-child) {
+        // margin-right: 30px;
+        // }
+    }
+     
 }
 
 .client__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 210px;
     height: 100%;
 
     border: 1px solid #afb1b8;
