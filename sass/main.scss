@@ -3,6 +3,7 @@
 @import "./base/base";
 
 // Components
+@import "./components/menu-btn";
 @import "./components/mixin";
 @import "./components/header";
 @import "./components/hero";
@@ -12,4 +13,5 @@
 @import "./components/client";
 @import "./components/footer";
 @import "./components/portfolio";
-@import "./components/modal"
+@import "./components/modal";
+@import "./components/mobile-menu"

@@ -91,7 +91,26 @@
             <li class="portfolio__item">
                 <a class="portfolio__link link" href="">
                     <div class="portfolio__wrapper">
-                        <img src="./images/technoquack.jpg" alt="изображение сайта" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                                            ./images/portfolio/technoquack_lg.jpg 1x
+                                            ./images/portfolio/technoquack_lg@2x.jpg 2x
+                                            " media="(min-widh: 1200px)" type="images/jpg">
+                        
+                            <source srcset="
+                                            ./images/portfolio/technoquack_ml@2x.jpg 1x
+                                            ./images/portfolio/technoquack_ml.jpg 2x
+                                            " media="(min-widh: 768px)" type="images/jpg">
+                        
+                            <source srcset="
+                                            ./images/portfolio/technoquack_sm.jpg 1x
+                                            ./images/portfolio/technoquack_sm@2x.jpg 2x
+                                            " media="(min-widh: 768px)" type="images/jpg">
+                            <source srcset="./images/portfolio/technoquack_sm.jpg2x" media="(max-widh: 767px)" type="image/jpg">
+                        
+                            <img  src="./images/portfolio/technoquack_sm.jpg" alt="изображение сайта" width="450">
+                        </picture>
+                
                         <p class="portfolio__descr">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -107,7 +126,7 @@
             </li>
             <li class="portfolio__item">
                 <a class="portfolio__link link" href="">
-                    <img src="./images/new-orlean.jpg" alt="фото баскетболистов" width="370" height="294">
+                    <img src="./images/new-orlean.jpg" alt="фото баскетболистов">
                     <div class="portfolio__cover">
                         <h3 class="portfolio__subtitle">Постер New Orlean vs Golden Star</h3>
                         <p class="portfolio__text text">Дизайн</p>
@@ -116,7 +135,7 @@
             </li>
             <li class="portfolio__item">
                 <a class="portfolio__link link" href="">
-                    <img src="./images/restaurant-seafood.jpg" alt="фото логотипа" width="370" height="294">
+                    <img src="./images/restaurant-seafood.jpg" alt="фото логотипа">
                     <div class="portfolio__cover">
                         <h3 class="portfolio__subtitle">Ресторан Seafood</h3>
                         <p class="portfolio__text text">Приложение</p>
@@ -125,7 +144,7 @@
             </li>
             <li class="portfolio__item">
                 <a class="portfolio__link link" href="">
-                    <img src="./images/project-prime.jpg" alt="фото наушников" width="370" height="294">
+                    <img src="./images/project-prime.jpg" alt="фото наушников">
                     <div class="portfolio__cover">
                         <h3 class="portfolio__subtitle">Дизайн</h3>
                         <p class="portfolio__text text">Маркетинг</p>
@@ -134,7 +153,7 @@
             </li>
             <li class="portfolio__item">
                 <a class="portfolio__link link" href="">
-                    <img src="./images/projeck-boxes.jpg" alt="фото боксов" width="370" height="294">
+                    <img src="./images/projeck-boxes.jpg" alt="фото боксов">
                     <div class="portfolio__cover">
                         <h3 class="portfolio__subtitle">Проект Boxes</h3>
                         <p class="portfolio__text text">Приложение</p>
@@ -143,7 +162,7 @@
             </li>
             <li class="portfolio__item">
                 <a class="portfolio__link link" href="">
-                    <img src="./images/inspiration.jpg" alt="фото сайта" width="370" height="294">
+                    <img src="./images/inspiration.jpg" alt="фото сайта">
                     <div class="portfolio__cover">
                         <h3 class="portfolio__subtitle">Inspiration has no Borders</h3>
                         <p class="portfolio__text text">Веб-сайт</p>
@@ -152,7 +171,7 @@
             </li>
             <li class="portfolio__item">
                 <a class="portfolio__link link" href="">
-                    <img src="./images/limited-edition.jpg" alt="фото журнала" width="370" height="294">
+                    <img src="./images/limited-edition.jpg" alt="фото журнала">
                     <div class="portfolio__cover">
                         <h3 class="portfolio__subtitle">Издание Limited Edition</h3>
                         <p class="portfolio__text text">Дизайн</p>
@@ -161,7 +180,7 @@
             </li>
             <li class="portfolio__item">
                 <a class="portfolio__link link" href="">
-                    <img src="./images/project-lab.jpg" alt="изображение логотипа" width="370" height="294">
+                    <img src="./images/project-lab.jpg" alt="изображение логотипа">
                     <div class="portfolio__cover">
                         <h3 class="portfolio__subtitle">Проект LAB</h3>
                         <p class="portfolio__text text">Маркетинг</p>
@@ -170,7 +189,7 @@
             </li>
             <li class="portfolio__item">
                 <a class="portfolio__link link" href="">
-                    <img src="./images/growing-business.jpg" alt="изображение приложения" width="370" height="294">
+                    <img src="./images/growing-business.jpg" alt="изображение приложения">
                     <div class="portfolio__cover">
                         <h3 class="portfolio__subtitle">Growing Business</h3>
                         <p class="portfolio__text text">Приложение</p>

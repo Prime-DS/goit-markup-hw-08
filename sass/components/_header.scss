@@ -1,4 +1,6 @@
 .header {
+
+   
     border-bottom: 1px solid #ececec;
 
     background-color: var(--header-bg-color);
@@ -7,15 +9,27 @@
 .header__container {
     display: flex;
     align-items: center;
+
+    @include mq(mobile-only){
+        justify-content: space-between;
+    }
 }
 
 .nav {
     display: flex;
     align-items: center;
+
+    
 }
 
 .header__link {
-    margin-right: 93px;
+    margin-right: 88px;
+
+
+    @include mq (desktop) {
+     margin-right: 93px;
+    }
+    
 }
 
 .logo {
@@ -25,6 +39,11 @@
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+
+    @include mq (mobile-only) {
+        font-size: 24px;
+        line-height: 2;
+    }
 }
 
 .logo--primery {
@@ -33,6 +52,9 @@
 
 .nav__list {
     display: flex;
+    @include mq (mobile-only) {
+        display: none;
+    }
 }
 
 .nav__item:not(:last-child) {
@@ -84,18 +106,33 @@
 
 .contact-list {
     display: flex;
+    flex-direction: column;
     margin-left: auto;
+
+    @include mq (mobile-only) {
+        display: none;
+    }
+
+    @include mq (desktop) {
+        flex-direction: row;
+    }
 }
 
 .contact-list__item:not(:last-child) {
-    margin-right: 50px;
+    @include mq (tablet) {
+        margin-bottom: 10px;
+    }
+    @include mq (desktop) {
+        margin-right: 50px;
+    }
+    
 }
 
 .contact-list--mail {
     display: flex;
     align-items: center;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    // padding-top: 31px;
+    // padding-bottom: 31px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -116,8 +153,8 @@
 .contact-list--phone {
     display: flex;
     align-items: center;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    // padding-top: 31px;
+    // padding-bottom: 31px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
