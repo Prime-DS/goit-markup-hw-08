@@ -1,6 +1,4 @@
-.feature {
-     padding-bottom: 0;
-}
+
 
 .feature__list {
 
@@ -28,9 +26,19 @@
 
 .feature__item {
   width: auto;
-  margin-bottom: 30px;
+  
+
+  @include mq(mobile-only){
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+  }
   
   @include mq(tablet-only) {
+    
+      &:nth-child(-n+2){
+          margin-bottom: 30px;
+      }
     width: 354px;   
   }
   @include mq (desktop) {
