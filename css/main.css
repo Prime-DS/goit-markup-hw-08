@@ -95,26 +95,6 @@ img {
   }
 }
 
-.menu-btn {
-  background-color: transparent;
-  border: transparent;
-  outline: transparent;
-}
-
-.menu-btn__icon {
-  margin-left: auto;
-  width: 40px;
-  height: 40px;
-}
-
-.menu-btn__icon-open {
-  opacity: 1;
-}
-
-.menu-btn__icon-close {
-  opacity: 0;
-}
-
 .header {
   border-bottom: 1px solid #ececec;
   background-color: var(--header-bg-color);
@@ -1097,6 +1077,33 @@ img {
   outline: transparent;
   background-color: var(--accent-color);
   color: var(--header-bg-color);
+}
+
+.menu-btn {
+  display: flex;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-btn__icon {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-btn__icon-open {
+  opacity: 1;
+}
+
+.menu-btn__icon-close {
+  opacity: 0;
 }
 
 .mobile-menu {

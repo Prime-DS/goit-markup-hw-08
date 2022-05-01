@@ -1,15 +1,21 @@
 .menu-btn {
+    display: flex;
     background-color: transparent;
     border: transparent;
     outline: transparent;
+
+
+    @include mq (tablet) {
+        
+            display: none;
+        }
 
 
     &__icon {
         margin-left: auto;
         width: 40px;
         height: 40px;
-
-
+        
         &-open{
             opacity: 1;
            
@@ -21,4 +27,7 @@
         }
 
     }
+
 }
+
+    
