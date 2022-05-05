@@ -591,7 +591,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 210px;
   height: 100%;
   border: 1px solid #afb1b8;
   fill: #afb1b8;
